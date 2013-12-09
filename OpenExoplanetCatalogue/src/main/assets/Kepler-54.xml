@@ -1,0 +1,43 @@
+<system>
+	<name>Kepler-54</name>
+	<rightascension>19 39 05</rightascension>
+	<declination>+43 03 22</declination>
+	<distance>326.56</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.508</magJ>
+		<magH errorminus="0.024" errorplus="0.024">12.897</magH>
+		<magK errorminus="0.021" errorplus="0.021">12.648</magK>
+		<mass>0.51</mass>
+		<radius>0.5</radius>
+		<planet>
+			<name>Kepler-54 b</name>
+			<name>KOI 886.01</name>
+			<name>KID 7455287</name>
+			<list>Confirmed planets</list>
+			<mass>0.014504</mass>
+			<radius>0.191374</radius>
+			<period>8.0109434</period>
+			<transittime errorminus="0.0029" errorplus="0.0029" unit="BJD">2455103.20573</transittime>
+			<description>This planet candidate was discovered by the Kepler spacecraft. It transits its host star every 8.01 days for 3.4129 hours. Periodic transit timing variations confirm its planetary nature.</description>
+			<discoverymethod>transit</discoverymethod>
+			<lastupdate>12/08/19</lastupdate>
+			<discoveryyear>2012</discoveryyear>
+		</planet>
+		<planet>
+			<name>Kepler-54 c</name>
+			<name>KOI 886.02</name>
+			<name>KID 7455287</name>
+			<list>Confirmed planets</list>
+			<mass>0.004819</mass>
+			<radius>0.112090</radius>
+			<period>12.0717249</period>
+			<transittime errorminus="0.0091" errorplus="0.0091" unit="BJD">2455076.44842</transittime>
+			<description>This planet candidate was discovered by the Kepler spacecraft. It transits its host star every 12.07 days for 4.9738 hours. Periodic transit timing variations confirm its planetary nature.</description>
+			<discoverymethod>transit</discoverymethod>
+			<lastupdate>12/08/19</lastupdate>
+			<discoveryyear>2012</discoveryyear>
+		</planet>
+		<name>Kepler-54</name>
+		<temperature>3705.0</temperature>
+	</star>
+</system>

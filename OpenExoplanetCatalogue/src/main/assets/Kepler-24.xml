@@ -1,0 +1,48 @@
+<system>
+	<name>Kepler-24</name>
+	<rightascension>19 21 39</rightascension>
+	<declination>+38 20 37</declination>
+	<distance>1224</distance>
+	<star>
+		<name>Kepler-24</name>
+		<name>2MASS J19213918+3820375</name>
+		<name>KIC 3231341</name>
+		<name>KOI-1102</name>
+		<mass>1.03</mass>
+		<radius>1.07</radius>
+		<metallicity>-0.24</metallicity>
+		<magJ errorminus="0.023" errorplus="0.023">13.763</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.45</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.37</magK>
+		<spectraltype>G</spectraltype>
+		<planet>
+			<name>Kepler-24 b</name>
+			<name>KOI 1102.02</name>
+			<list>Confirmed planets</list>
+			<radius>0.21871271</radius>
+			<period>8.1453</period>
+			<semimajoraxis>0.08</semimajoraxis>
+			<description>This planet candidate was discovered with the Kepler spacecraft. Its host star gets periodically fainter whenever the planet is in front of the star. Because there are multiple phenomena that can create a signal that looks similar to a planetary transit, the candidates have to be confirmed with another method. For Kepler-24 the planetary nature of the companions has been confirmed by transit timing variations, caused by other planets in the system, and a stability analysis. However, the mass of the planets is not well constrained yet.</description>
+			<discoverymethod>transit</discoverymethod>
+			<transittime unit="BJD">2454973.5689</transittime>
+			<lastupdate>12/08/06</lastupdate>
+			<discoveryyear>2012</discoveryyear>
+			<temperature>935.3</temperature>
+		</planet>
+		<planet>
+			<name>Kepler-24 c</name>
+			<name>KOI 1102.01</name>
+			<list>Confirmed planets</list>
+			<radius>0.25516482</radius>
+			<period>12.333</period>
+			<semimajoraxis>0.106</semimajoraxis>
+			<description>This planet candidate was discovered with the Kepler spacecraft. Its host star gets periodically fainter whenever the planet is in front of the star. Because there are multiple phenomena that can create a signal that looks similar to a planetary transit, the candidates have to be confirmed with another method. For Kepler-24 the planetary nature of the companions has been confirmed by transit timing variations, caused by other planets in the system, and a stability analysis. However, the mass of the planets is not well constrained yet.</description>
+			<discoverymethod>transit</discoverymethod>
+			<transittime unit="BJD">2454970.586</transittime>
+			<lastupdate>12/08/06</lastupdate>
+			<discoveryyear>2012</discoveryyear>
+			<temperature>812.5</temperature>
+		</planet>
+		<temperature>5800.0</temperature>
+	</star>
+</system>
