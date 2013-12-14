@@ -91,7 +91,7 @@ public class XMLPullParserSystem {
         }
     }
         Log.i("Parser", "New System Added to be displayed");
-         return new System(systemName, rightAscension, declination, distance);
+        return new System(systemName, rightAscension, declination, distance);
     }
 
 
