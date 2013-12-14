@@ -124,7 +124,61 @@ public class Planet {
     }
 
     public String toString() {
-        return "Name: " + planetName + "/nMass: " + planetMass + "/n Period: " + planetPeriod + "/n Semimajor Axis: " + planetSemiMajorAxis + "/n Eccentricity: " + planetEccentricity + "/n Temperature: " + planetTemp + "/n Status: " + listStatus + "/n Dicovery Method: " + planetDiscoveryMethod + "/n Discovery Year: " + planetDiscoveryYear + "/n Last Update: " + planetLastUpdate;
+        StringBuilder builder = new StringBuilder();
+        if (planetName == null && listStatus == null && planetMass == null && planetPeriod == null && planetSemiMajorAxis == null && planetEccentricity == null && planetDiscoveryMethod == null && planetLastUpdate == null && planetDiscoveryYear == null && planetTemp == null) {
+            return "";
+        }
+        if(planetName != null) {
+            builder.append(" Planet Name:");
+            builder.append(planetName);
+            builder.append("\n");
+        }
+        if(listStatus != null) {
+            builder.append(" Status:");
+            builder.append(listStatus);
+            builder.append("\n");
+        }
+        if(planetLastUpdate != null) {
+            builder.append(" Last Update:");
+            builder.append(planetLastUpdate);
+            builder.append("\n");
+        }
+        if(planetDiscoveryYear != null) {
+            builder.append(" Discovery Year:");
+            builder.append(planetDiscoveryYear);
+            builder.append("\n");
+        }
+        if(planetDiscoveryMethod != null) {
+            builder.append(" Discovery Method:");
+            builder.append(planetDiscoveryMethod);
+            builder.append("\n");
+        }
+        if(planetMass != null) {
+            builder.append(" Mass:");
+            builder.append(planetMass);
+            builder.append("\n");
+        }
+        if(planetPeriod != null) {
+            builder.append(" Period:");
+            builder.append(planetPeriod);
+            builder.append("\n");
+        }
+        if(planetTemp != null) {
+            builder.append(" Temperature:");
+            builder.append(planetTemp);
+            builder.append("\n");
+        }
+        if(planetEccentricity != null) {
+            builder.append(" Eccentricity:");
+            builder.append(planetEccentricity);
+            builder.append("\n");
+        }
+        if(planetSemiMajorAxis != null) {
+            builder.append(" Semi-Major Axis:");
+            builder.append(planetSemiMajorAxis);
+            builder.append("\n");
+        }
+        return builder.toString().substring(1);
     }
 }
 

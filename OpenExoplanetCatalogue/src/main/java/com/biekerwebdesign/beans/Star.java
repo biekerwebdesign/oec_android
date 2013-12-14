@@ -131,7 +131,69 @@ public class Star {
     }
 
     public String toString() {
-        return "Star Name: " + starName + "/n Mass: " + starMass + "/n Radius: " + starRadius + "/n Mag V: " + starMagV + "/n Mag B: " + starMagB + "/n Mag H: " + starMagH + "/n Mag J: " + starMagJ + "/n Mag K: " + starMagK + "/n Metallicity: " + starMetallicity + "/n Spectral Type: " + starSpectralType + "/n Temperature: " + starTemp;
+        StringBuilder builder = new StringBuilder();
+        if (starName == null && starMass == null && starRadius == null && starMagV == null && starMagB == null && starMagJ == null && starMagH == null && starMagK == null && starMetallicity == null && starSpectralType == null && starTemp == null) {
+            return "";
+        }
+
+        if (starName != null) {
+            builder.append(" Star Name: ");
+            builder.append(starName);
+            builder.append("\n");
+        }
+        if (starMass!= null) {
+            builder.append(" Mass: ");
+            builder.append(starMass);
+            builder.append("\n");
+        }
+        if (starRadius != null) {
+            builder.append(" Radius: ");
+            builder.append(starName);
+            builder.append("\n");
+        }
+        if (starMetallicity != null) {
+            builder.append(" Metallicity: ");
+            builder.append(starMetallicity);
+            builder.append("\n");
+        }
+        if (starSpectralType!= null) {
+            builder.append(" Spectral Type: ");
+            builder.append(starSpectralType);
+            builder.append("\n");
+        }
+        if (starTemp != null) {
+            builder.append(" Temperature: ");
+            builder.append(starTemp);
+            builder.append("\n");
+        }
+        if (starMagV != null) {
+            builder.append(" Mag V: ");
+            builder.append(starMagV);
+            builder.append("\n");
+        }
+        if (starMagB != null) {
+            builder.append(" Mag B: ");
+            builder.append(starMagB);
+            builder.append("\n");
+        }
+        if (starMagH != null) {
+            builder.append(" Mag H: ");
+            builder.append(starMagH);
+            builder.append("\n");
+        }
+        if (starMagJ != null) {
+            builder.append(" Mag J: ");
+            builder.append(starMagJ);
+            builder.append("\n");
+        }
+        if (starMagK != null) {
+            builder.append(" Mag K: ");
+            builder.append(starMagK);
+            builder.append("\n");
+        }
+        return builder.toString().substring(1);
+
     }
+
 }
 
