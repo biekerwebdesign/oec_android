@@ -42,7 +42,7 @@ public class StarFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.star_list_fragment, container, false);
-        Log.i("Fragment", "OnCreateView(): View Created");
+        Log.i("Fragment", "OnCreateView(): Star View Created");
         return view;
     }
 
@@ -57,11 +57,11 @@ public class StarFragment extends ListFragment {
         try {
             XMLPullParserStar parser = new XMLPullParserStar();
             stars = parser.parse(getActivity().getAssets().open("11 Com.xml"));
-            Log.i("Parser:", "Assets Opened");
+            Log.i("Parser:", "Star Assets Opened");
             ArrayAdapter<Star> adapter =
                     new ArrayAdapter<Star>(this.getActivity(), R.layout.list_item, stars);
             listView.setAdapter(adapter);
-            Log.i("Adapter:", "ArrayAdapter Set");
+            Log.i("Adapter:", "Star ArrayAdapter Set");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (XmlPullParserException x) {
