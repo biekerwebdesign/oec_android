@@ -2,11 +2,15 @@ package com.biekerwebdesign.openexoplanetcatalogue;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.content.Context;
+import android.content.res.Configuration;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.view.Menu;
+import android.view.MenuItem;
 
 
 import java.util.List;
@@ -31,14 +35,22 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (savedInstanceState == null) {
-            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.add(R.id.system_container, new SystemFragment());
-            fragmentTransaction.commit();
+        if (findViewById(R.id.first_container) != null && findViewById(R.id.second_container) != null) {
+            if (savedInstanceState == null) {
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.add(R.id.first_container, new SystemFragment());
+                fragmentTransaction.add(R.id.second_container, new StarFragment());
+                fragmentTransaction.commit();
+            }
+        } else if (findViewById(R.id.first_container) != null) {
+            if (savedInstanceState == null) {
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.add(R.id.first_container, new SystemFragment());
+                fragmentTransaction.commit();
+            }
+
         }
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -48,7 +60,8 @@ public class MainActivity extends Activity {
         return true;
     }
 
-/*    @Override
+
+    @Override
        public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -59,6 +72,5 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-*/
 
 }
