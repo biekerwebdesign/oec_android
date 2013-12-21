@@ -7,8 +7,4 @@
         android:orderInCategory="100"
         android:showAsAction="never" />
 
-    <item android:id="@+id/organize_settings"
-        android:title="Organization"
-        android:orderInCategory="90"
-        android:showAsAction="never" />
 </menu>
