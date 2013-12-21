@@ -31,6 +31,7 @@ public class XMLPullParserStar {
             // parser = factory.newPullParser();
 
             parser.setInput(is, null);
+            //TODO Make the parse method check to make sure it is a star tag before continuing
             parser.nextTag();
             Log.i("Star:", "readStar called");
             return readStar(parser);
@@ -43,13 +44,14 @@ public class XMLPullParserStar {
         List stars = new ArrayList();
         parser.require(XmlPullParser.START_TAG, ns, "star");
         Log.i("Parser", "Passed parser.require");
-        String name = parser.getName();
+        //String name = parser.getName();
         Log.i("parser", "getName() Called");
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 Log.i("readStar", "Start Tag Continue called");
                 continue;
             }
+            String name = parser.getName();
             if (name.equalsIgnoreCase("star")) {
                 Log.i("String", "Star added to parser");
                 stars.add(readEntry(parser));
