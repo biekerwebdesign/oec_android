@@ -59,7 +59,7 @@ public class SystemFragment extends ListFragment {
                 new ArrayAdapter<System>(this.getActivity(), R.layout.list_item, systems);
         listView.setAdapter(adapter); */
 
-        listView = (ListView) getView().findViewById(R.id.systemlistview);
+        listView = (ListView) getView().findViewById(android.R.id.list);
         systems = new ArrayList<System>();
 
         List<System> systems = null;
