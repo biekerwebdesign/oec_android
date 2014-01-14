@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_app_theme_check"
+        android:defaultValue="true"
+        android:title="@string/app_theme_dark_actionbar"
+        />
+
+    <ListPreference
+        android:key="pref_app_theme"
+        android:defaultValue="@string/app_theme_dark_actionbar"
+        android:title="@string/theme"
+        />
+
+
+</PreferenceScreen>

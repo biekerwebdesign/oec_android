@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Open Exoplanet Catalogue</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Action BAr Items -->
+    <string name="action_settings">Settings</string>
+    <string name="preferences">Preferences</string>
+
+    <!-- Theme Names -->
+    <string name="theme">Theme</string>
+    <string name="app_theme_dark_actionbar">Dark Actionbar</string>
+    <string name="app_theme_light">Holo Light</string>
+    <string name="app_theme_dark">Holo Dark</string>
+
+</resources>
