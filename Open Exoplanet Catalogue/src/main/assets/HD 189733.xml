@@ -17,6 +17,9 @@
 			<mass>0.8</mass>
 			<radius>0.788</radius>
 			<magV errorminus="0.05" errorplus="0.05">7.68</magV>
+			<magB>8.578</magB>
+			<magR>7.126</magR>
+			<magI>6.68</magI>
 			<magJ errorminus="0.027" errorplus="0.027">6.073</magJ>
 			<magH errorminus="0.027" errorplus="0.027">5.587</magH>
 			<magK errorminus="0.02" errorplus="0.02">5.54</magK>
@@ -45,6 +48,7 @@
 	At a distance of 63 light-years from us, this turbulent alien world is one of the nearest exoplanets to Earth that can be seen crossing the face of its star. By observing this planet before, during, and after it disappeared behind its host star during orbit, astronomers were able to deduce that HD 189733b is a deep, azure blue - reminiscent of Earth's colour as seen from space.
 				
 	Credit: NASA, ESA, M. Kornmesser</imagedescription>
+				<list>Planets in binary systems, S-type</list>
 			</planet>
 			<temperature>4980.0</temperature>
 		</star>
